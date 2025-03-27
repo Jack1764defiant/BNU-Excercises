@@ -110,7 +110,7 @@ public class MusicPlayer{
             //Repeat this, so that it can be run multiple times while the song is playing
             while (true){
                 //If the clip has finished, close the clip and return to the main menu
-                if (clip.getMicrosecondLength() != clip.getMicrosecondPosition()){
+                if (clip.getMicrosecondLength() == clip.getMicrosecondPosition()){
                     clip.close();
                     return;
                 }
